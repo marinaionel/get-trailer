@@ -16,6 +16,6 @@ module.exports = async function (context, req) {
   context.log("JavaScript HTTP trigger function processed a request.");
 
   context.res = {
-    body: response.data,
+    body: response.data.items[0].id.videoId,
   };
 };
