@@ -8,6 +8,6 @@ get-trailer azure function  #nodejs #axios
 4. To run locally press F5 (this might ask you to install Azure Tools)
 
 For more details see 
-* [Code and test Azure Functions locally]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local
-* [Quickstart: Create a C# function in Azure using Visual Studio Code]: https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp
-* [Develop Azure Functions by using Visual Studio Code]: https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp
+* [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local)
+* [Quickstart: Create a C# function in Azure using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/create-first-function-vs-code-csharp)
+* [Develop Azure Functions by using Visual Studio Code](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs-code?tabs=csharp)
