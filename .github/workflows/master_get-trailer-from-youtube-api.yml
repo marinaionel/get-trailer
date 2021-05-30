@@ -37,7 +37,7 @@ jobs:
     - name: Azure Login
       uses: azure/login@v1
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_78BF759790A74BB9A163061E05B3E237 }}
     
     - name: Azure CLI script
       uses: azure/CLI@v1
