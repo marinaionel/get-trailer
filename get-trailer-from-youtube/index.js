@@ -7,12 +7,12 @@ module.exports = async function (context, req) {
   const credential = new DefaultAzureCredential();
   const client = new SecretClient(VaultUri, credential);
 
-  let key = client.getSecret("YOUTUBE-API-KEY");
+  let key = await client.getSecret("YOUTUBE-API-KEY");
   let maxResults = 1;
 
   const response = await axios.get(
     "https://www.googleapis.com/youtube/v3/search?key=" +
-      key +
+      key.value +
       "&type=video&part=snippet&maxResults=" +
       maxResults +
       "&q=" +
