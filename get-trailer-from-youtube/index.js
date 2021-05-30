@@ -1,7 +1,13 @@
 const axios = require("axios").default;
+const { DefaultAzureCredential } = require("@azure/identity");
+const { SecretClient } = require("@azure/keyvault-secrets");
 
 module.exports = async function (context, req) {
-  let key = "AIzaSyDNb28dex09kr0CUxGa0A9FCqU6I4iuDQw";
+  const VaultUri = "https://moviesapikeyvault.vault.azure.net/";
+  const credential = new DefaultAzureCredential();
+  const client = new SecretClient(VaultUri, credential);
+
+  let key = client.getSecret("YOUTUBE-API-KEY");
   let maxResults = 1;
 
   const response = await axios.get(
