@@ -4,8 +4,9 @@ get-trailer azure function  #nodejs #axios
 ## How to run locally
 1. Clone the repository
 2. Open in Visual Studio Code
-3. Install code(vscode:extension/ms-azuretools.vscode-azurefunctions) extension for Visual Studio Code
-4. To run locally press F5 (this might ask you to install Azure Tools)
+3. Install `vscode:extension/ms-azuretools.vscode-azurefunctions` extension for Visual Studio Code
+4. Open a new terminal and run `npm i` to restore the dependencies
+5. To run locally press F5 (this might ask you to install Azure Tools)
 
 For more details see 
 * [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-local)
