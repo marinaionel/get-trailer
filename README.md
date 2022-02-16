@@ -1,6 +1,8 @@
 # get-trailer
 get-trailer azure function  #nodejs #axios
 
+This project retrieves the id of a video based on a search string from the YouTube API.
+
 ## How to run locally
 1. Clone the repository
 2. Open in Visual Studio Code
